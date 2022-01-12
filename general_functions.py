@@ -57,12 +57,12 @@ def gen_driver():
     return driver
 
 def save_info (li, st):
-    with open(f"../results1/{st}.txt", "w") as f:
+    with open(f"results1/{st}.txt", "w") as f:
         for s in li:
             f.write(str(s) +"\n")
 
 def open_info(li, st):
-    with open(f"../results1/{st}.txt", "r") as f:
+    with open(f"results1/{st}.txt", "r") as f:
         for line in f:
             li.append(str(line.strip()))
 
