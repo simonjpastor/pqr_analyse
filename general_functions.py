@@ -44,7 +44,7 @@ def plot(data):
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         title={
-        'text': "Poids des Thèmes dans la Presse Quotidienne Régionale %",
+        'text': "Poids des Thèmes dans la Presse Quotidienne Régionale % (12/01/2022)",
         'y':0.85,
         'x':0.5,
         'xanchor': 'center',
@@ -70,7 +70,7 @@ def plot_candidates(y):
         yaxis_title="Candidats",
         legend_title="Région",
         title={
-        'text': "Mention des Candidats dans la Presse Quotidienne Régionale",
+        'text': "Mention des Candidats dans la Presse Quotidienne Régionale (12/01/2022)",
         'y':0.95,
         'x':0.5,
         'xanchor': 'center',
