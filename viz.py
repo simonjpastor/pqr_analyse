@@ -19,7 +19,6 @@ import streamlit as st
 APP_NAME = "Analyse PQR"
 st.markdown("<h1 style='text-align: center; color: black;'>Thèmes et Candidats mentionnés dans la Presse Quotidienne Régionale</h1>", unsafe_allow_html=True)
 
-st.info("©Simon Pastor")
 y = pd.read_csv("y.csv", index_col=0)
 x = pd.read_csv("x.csv",index_col=0)
 
@@ -27,3 +26,6 @@ y = y.reset_index()
 
 st.write(plot(x))
 st.write(plot_candidates(y))
+
+st.write("©Simon Pastor")
+st.write("Contact: simonjpastor@gmail.com")
