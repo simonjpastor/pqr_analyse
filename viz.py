@@ -15,25 +15,12 @@ from bs4 import BeautifulSoup
 import requests
 import datetime
 from datetime import date, datetime, timedelta
-from selenium import webdriver
-import chromedriver_binary
 import streamlit as st
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-import time
-import random
-import nltk
-from nltk.corpus import stopwords
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud, STOPWORDS
 import plotly.express as px
-import squarify
 import json
 import plotly.express as px
-import streamlit as s
+import streamlit as st
 
 
 
