@@ -17,9 +17,8 @@ from selenium.webdriver.chrome.options import Options
 import time
 import random
 import nltk
-from nltk.corpus import stopwords
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud, STOPWORDS
+from wordcloud import WordCloud
 import plotly.express as px
 import squarify
 import json
