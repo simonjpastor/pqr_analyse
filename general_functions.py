@@ -39,8 +39,8 @@ def plot(data):
         ),
 
         autosize=False,
-        width=900,
-        height=500,
+        width=1000,
+        height=600,
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)',
         title={
@@ -57,7 +57,7 @@ def plot(data):
 def plot_candidates(y):
     fig = px.bar(y, x=y.columns, y=y["index"], orientation='h',
              height=600,
-             width=800,
+             width=1000,
              title='')
 
     fig.update_layout(
