@@ -574,16 +574,16 @@ def topic_count2(titles, descriptions, topic):
             count += 1
     return count
 
-def stuff_topics(titles, descriptions, topics):
-    titles_complete, descriptions_complete = tokenize(titles,descriptions,stopwords.words('french'))
+def stuff_topics(titles, descriptions, topics, stopwords_list):
+    titles_complete, descriptions_complete = tokenize(titles,descriptions,stopwords_list)
     listo = []
     for i in topics:
         i = topic_count2(titles_complete,descriptions_complete, i)
         listo.append(i)
     return listo
 
-def stuff_candidates(titles, descriptions, candidates):
-    titles_complete, descriptions_complete = tokenize(titles,descriptions,stopwords.words('french'))
+def stuff_candidates(titles, descriptions, candidates, stopwords_list):
+    titles_complete, descriptions_complete = tokenize(titles,descriptions,stopwords_list)
     listo = []
     for i in candidates:
         i = topic_count2(titles_complete,descriptions_complete, i)
