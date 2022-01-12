@@ -1,13 +1,5 @@
-from scrape_functions import scrape_parisnormandie,scrape_lamanchelibre,\
-scrape_lavoixdunord, scrape_nordeclair, scrape_lunion, scrape_courrierpicard,\
-scrape_estrepublicain, scrape_dna, scrape_lunion, scrape_lorrain, scrape_lalsace,\
-scrape_lyonne, scrape_lejsl, scrape_bienpublic, scrape_leprogres, scrape_lamontagne,\
-scrape_laprovence, scrape_nicematin, scrape_varmatin, scrape_midilibre, scrape_lindependant,\
-scrape_leparisien, scrape_ladepeche, scrape_sudouest
 
-from general_functions import progressBar, check_date, check_duplicates, tokenize, count_func, \
-day_word, topic_count, topic_count2, stuff_topics, get_viz_df, plot, gen_driver, save_info, open_info,\
-stuff_candidates, get_viz_candidates, plot_candidates
+from general_functions import  plot, plot_candidates
 
 import pandas as pd
 import numpy as np
