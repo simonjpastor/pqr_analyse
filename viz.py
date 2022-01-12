@@ -17,7 +17,8 @@ import streamlit as st
 
 
 APP_NAME = "Analyse PQR"
-st.markdown("<h1 style='text-align: center; color: black;'Analyse PQR></h1>", unsafe_allow_html=True)
+
+st.title(APP_NAME)
 
 y = pd.read_csv("y.csv", index_col=0)
 x = pd.read_csv("x.csv",index_col=0)
