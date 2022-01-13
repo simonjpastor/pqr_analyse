@@ -23,7 +23,7 @@ st.markdown("<h2 style='text-align: center; color: black;'>Semaine du 10 au 14 J
 presse_nationale = pd.read_csv("presse_nationale.csv", index_col="Unnamed: 0")
 y = pd.read_csv("y2.csv",index_col="Unnamed: 0").transpose()
 y.insert(0,"",0)
-y = pressenationale.join(y)
+y = presse_nationale.join(y)
 x = pd.read_csv("y.csv",index_col=0)
 
 
