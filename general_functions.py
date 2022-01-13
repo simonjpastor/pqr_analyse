@@ -139,7 +139,7 @@ def plot_all(data):
 
     ),
     autosize=False,
-    width=800,
+    width=1000,
     height=700,
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(0,0,0,0)',
