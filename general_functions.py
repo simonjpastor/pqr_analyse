@@ -80,6 +80,7 @@ def plot_candidates(y):
     return fig
 
 def plot_all(data):
+    data = data.reset_index()
     data = data.transpose()
     data = data[['immigration', 'economie', 'securite', 'gouvernement',
        'candidats', 'delinquance', 'environnement_cat_nat', 'environnement',
