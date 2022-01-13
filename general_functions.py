@@ -29,6 +29,7 @@ def plot(data):
         title_font_family="Times New Roman",
         title_font_color="black",
         legend_title="Thèmes",
+        xaxis_title="Région",
 
         yaxis=dict(
         title_text="Poids %",
