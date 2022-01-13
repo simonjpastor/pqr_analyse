@@ -101,14 +101,15 @@ def plot_all(data):
             line=dict(color='rgba(0,128,0, 0.5)', width=0.05))))
 
     fig.update_layout(
+
         yaxis=dict(
         title_text="Poids %",
         ticktext=["0%", "20%", "40%", "60%","80%","100%"],
         tickvals=[0, 20, 40, 60, 80, 100],
         tickmode="array",
-        titlefont=dict(size=15),
+        titlefont=dict(size=15)),
+
         legend_tile="Thèmes",
-    ),
     autosize=False,
     #width=1200,
     #height=500,
