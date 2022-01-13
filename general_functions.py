@@ -55,11 +55,11 @@ def plot(data):
     return fig
 
 
-def plot_candidates(y):
-    y = y.reset_index()
-    fig = px.bar(y, x=y.columns, y=y["index"], orientation='h',
+def plot_candidates(data):
+    data = data.reset_index()
+    fig = px.bar(data, x=data.columns, y=data["index"], orientation='h',
              height=600,
-             width=1200,
+             width=800,
              title='')
 
     fig.update_layout(
