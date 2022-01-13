@@ -59,7 +59,7 @@ def plot_candidates(y):
     y = y.reset_index()
     fig = px.bar(y, x=y.columns, y=y["index"], orientation='h',
              height=600,
-             width=900,
+             width=700,
              title='')
 
     fig.update_layout(
