@@ -29,6 +29,7 @@ x = pd.read_csv("y.csv",index_col=0)
 
 st.plotly_chart(plot_all(y), use_column_width=True)
 st.plotly_chart(plot_candidates(x), use_column_width=True)
+st.plotly_chart(plot_candidates(presse_nationale), use_column_width=True)
 
 st.write("©Simon Pastor")
 st.write("Contact: simonjpastor@gmail.com")
