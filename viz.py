@@ -30,6 +30,7 @@ st.write(plot_candidates(y))
 
 st.write("©Simon Pastor")
 st.write("Contact: simonjpastor@gmail.com")
+st.write("")
 
-st.write("Journaux de la Presse Quotidienne Régionale:")
+st.markdown("<h3 style='text-align: center; color: black;'><strong>Presse Quotidienne Régionale</strong></h3>", unsafe_allow_html=True)
 st.write("Ouest-France, Sud Ouest, La Voix du Nord, Le Parisien, Le Télégramme, Le Dauphiné Libéré, Le Progrès, La Nouvelle République, La Montagne, Dernières Nouvelles d'Alsace, La Dépêche du Midi, L'Est Républicain, Le Républicain Lorrain, Midi Libre, Le Courrier de l'Ouest,  La Provence, L'Union - L'Ardennais, Nice Matin, L'Alsace, Le Courrier Picard, Le Journal de Saône-et-Loire, Var Matin, L'Indépendant, Paris Normandie, Le Maine Libre, Le Bien Public, Presse Océan, L'Yonne Républicaine, Nord Eclair, La Manche Libre, Ouest France Pays de La Loire, Ouest France Centre Val de Loire")
