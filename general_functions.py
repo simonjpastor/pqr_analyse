@@ -125,8 +125,7 @@ def plot_all(data):
         x=data.index,
         name=f"{i} %",
         marker=dict(
-            color=color_dict[i],
-            line=dict(color='rgba(0,128,0, 0.5)', width=0.05))))
+            color=color_dict[i],)))
 
     fig.update_layout(
         legend_title="Thèmes",
