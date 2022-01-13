@@ -77,6 +77,8 @@ def plot_candidates(data):
         'x':0.5,
         'xanchor': 'center',
         'yanchor': 'top'})
+    fig.layout.plot_bgcolor = '#fff'
+    fig.layout.paper_bgcolor = '#fff'
     return fig
 
 def plot_national(data):
@@ -101,6 +103,8 @@ def plot_national(data):
         'x':0.5,
         'xanchor': 'center',
         'yanchor': 'top'})
+    fig.layout.plot_bgcolor = '#fff'
+    fig.layout.paper_bgcolor = '#fff'
     return fig
 
 def plot_all(data):
@@ -146,5 +150,7 @@ def plot_all(data):
         'xanchor': 'center',
         'yanchor': 'top'},
     barmode='stack')
+    fig.layout.plot_bgcolor = '#fff'
+    fig.layout.paper_bgcolor = '#fff'
 
     return fig
