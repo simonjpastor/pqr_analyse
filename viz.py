@@ -27,7 +27,7 @@ y = y.join(presse_nationale)
 x = pd.read_csv("x.csv",index_col=0)
 
 
-st.write(plot(x))
+st.write(plot_all(x))
 st.write(plot_candidates(y))
 
 st.write("©Simon Pastor")
