@@ -59,7 +59,7 @@ def plot_candidates(y):
     y = y.reset_index()
     fig = px.bar(y, x=y.columns, y=y["index"], orientation='h',
              height=600,
-             width=800,
+             width=900,
              title='')
 
     fig.update_layout(
@@ -109,7 +109,7 @@ def plot_all(data):
         titlefont=dict(size=15),
     ),
     autosize=False,
-    width=900,
+    width=1000,
     height=500,
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(0,0,0,0)',
