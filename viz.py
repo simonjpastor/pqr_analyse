@@ -22,8 +22,8 @@ st.markdown("<h2 style='text-align: center; color: black;'>Semaine du 10 au 14 J
 
 presse_nationale = pd.read_csv("presse_nationale.csv", index_col="Unnamed: 0")
 y = pd.read_csv("y2.csv",index_col="Unnamed: 0").transpose()
-y["_"] = 0
-y = y.join(presse_nationale)
+y.insert(0,"",0)
+y = pressenationale.join(y)
 x = pd.read_csv("y.csv",index_col=0)
 
 
@@ -37,3 +37,6 @@ st.write("")
 st.markdown("<h3 style='text-align: center; color: black;'><strong>Presse Quotidienne Régionale</strong></h3>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center'>Ouest-France, Sud Ouest, La Voix du Nord, Le Parisien, Le Télégramme, Le Dauphiné Libéré, Le Progrès, La Nouvelle République, La Montagne, Dernières Nouvelles d'Alsace, La Dépêche du Midi, L'Est Républicain, Le Républicain Lorrain, Midi Libre, Le Courrier de l'Ouest,  La Provence, L'Union - L'Ardennais, Nice Matin, L'Alsace, Le Courrier Picard, Le Journal de Saône-et-Loire, Var Matin, L'Indépendant, Paris Normandie, Le Maine Libre, Le Bien Public, Presse Océan, L'Yonne Républicaine, Nord Eclair, La Manche Libre, Ouest France Pays de La Loire, Ouest France Centre Val de Loire</p>", unsafe_allow_html=True)
 #st.write("Ouest-France, Sud Ouest, La Voix du Nord, Le Parisien, Le Télégramme, Le Dauphiné Libéré, Le Progrès, La Nouvelle République, La Montagne, Dernières Nouvelles d'Alsace, La Dépêche du Midi, L'Est Républicain, Le Républicain Lorrain, Midi Libre, Le Courrier de l'Ouest,  La Provence, L'Union - L'Ardennais, Nice Matin, L'Alsace, Le Courrier Picard, Le Journal de Saône-et-Loire, Var Matin, L'Indépendant, Paris Normandie, Le Maine Libre, Le Bien Public, Presse Océan, L'Yonne Républicaine, Nord Eclair, La Manche Libre, Ouest France Pays de La Loire, Ouest France Centre Val de Loire")
+
+st.markdown("<h3 style='text-align: center; color: black;'><strong>Presse Nationale</strong></h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: black;'>Le Monde, Le Figaro, Le Parisien, Les Echos, Le Point, Libération, Valeurs Actuelles</h3>", unsafe_allow_html=True)

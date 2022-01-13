@@ -101,7 +101,7 @@ def plot_all(data):
             line=dict(color='rgba(0,128,0, 0.5)', width=0.05))))
 
     fig.update_layout(
-        legend_title="Région",
+        legend_title="Thèmes",
         yaxis=dict(
         title_text="Poids %",
         ticktext=["0%", "20%", "40%", "60%","80%","100%"],
