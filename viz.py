@@ -26,7 +26,7 @@ y.insert(0,"",0)
 y = presse_nationale.join(y)
 x = pd.read_csv("y.csv",index_col=0)
 
-candidats_pn = pd.read_csv("candidats_presse.csv",index_col=0)
+candidats_pn = pd.read_csv("candidats_presse_nationale.csv",index_col=0)
 
 st.plotly_chart(plot_all(y), use_column_width=True)
 st.plotly_chart(plot_candidates(x), use_column_width=True)
