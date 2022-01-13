@@ -79,6 +79,30 @@ def plot_candidates(data):
         'yanchor': 'top'})
     return fig
 
+def plot_national(data):
+    data = data.reset_index()
+    fig = px.bar(data, x=data.columns, y=data["index"], orientation='h',
+             #height=600,
+             #width=800,
+             )
+
+    fig.update_layout(
+        font_family="Courier New",
+        font_color="black",
+        title_font_family="Times New Roman",
+        title_font_color="black",
+        legend_title_font_color="green",
+        xaxis_title="Nombre de Mentions",
+        yaxis_title="Candidats",
+        legend_title="",
+        title={
+        'text': "Mention des Candidats dans la Presse Nationale",
+        'y':0.95,
+        'x':0.5,
+        'xanchor': 'center',
+        'yanchor': 'top'})
+    return fig
+
 def plot_all(data):
     #data = data.reset_index
     data = data.transpose()
