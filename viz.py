@@ -39,4 +39,4 @@ st.markdown("<p style='text-align: center'>Ouest-France, Sud Ouest, La Voix du N
 #st.write("Ouest-France, Sud Ouest, La Voix du Nord, Le Parisien, Le Télégramme, Le Dauphiné Libéré, Le Progrès, La Nouvelle République, La Montagne, Dernières Nouvelles d'Alsace, La Dépêche du Midi, L'Est Républicain, Le Républicain Lorrain, Midi Libre, Le Courrier de l'Ouest,  La Provence, L'Union - L'Ardennais, Nice Matin, L'Alsace, Le Courrier Picard, Le Journal de Saône-et-Loire, Var Matin, L'Indépendant, Paris Normandie, Le Maine Libre, Le Bien Public, Presse Océan, L'Yonne Républicaine, Nord Eclair, La Manche Libre, Ouest France Pays de La Loire, Ouest France Centre Val de Loire")
 
 st.markdown("<h3 style='text-align: center; color: black;'><strong>Presse Nationale</strong></h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: black;'>Le Monde, Le Figaro, Le Parisien, Les Echos, Le Point, Libération, Valeurs Actuelles</h3>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center;'>Le Monde, Le Figaro, Le Parisien, Les Echos, Le Point, Libération, Valeurs Actuelles</p>", unsafe_allow_html=True)
