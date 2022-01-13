@@ -24,7 +24,7 @@ presse_nationale = pd.read_csv("presse_nationale.csv", index_col="Unnamed: 0")
 y = pd.read_csv("y2.csv",index_col="Unnamed: 0").transpose()
 y["_"] = 0
 y = y.join(presse_nationale)
-x = pd.read_csv("x.csv",index_col=0)
+x = pd.read_csv("y.csv",index_col=0)
 
 
 st.plotly_chart(plot_all(y), use_column_width=True)
