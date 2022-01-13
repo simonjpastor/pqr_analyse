@@ -56,9 +56,10 @@ def plot(data):
 
 
 def plot_candidates(y):
+    y = y.reset_index()
     fig = px.bar(y, x=y.columns, y=y["index"], orientation='h',
              height=600,
-             width=1000,
+             width=800,
              title='')
 
     fig.update_layout(
@@ -76,7 +77,6 @@ def plot_candidates(y):
         'x':0.5,
         'xanchor': 'center',
         'yanchor': 'top'})
-
     return fig
 
 def plot_all(data):
@@ -121,4 +121,3 @@ def plot_all(data):
     barmode='stack')
 
     return fig
-
