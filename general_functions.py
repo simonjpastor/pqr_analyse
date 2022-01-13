@@ -107,6 +107,7 @@ def plot_all(data):
         tickvals=[0, 20, 40, 60, 80, 100],
         tickmode="array",
         titlefont=dict(size=15),
+        legend_tile="Thèmes",
     ),
     autosize=False,
     #width=1200,
