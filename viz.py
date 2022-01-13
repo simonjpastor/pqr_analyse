@@ -1,5 +1,5 @@
 
-from general_functions import  plot, plot_candidates
+from general_functions import  plot, plot_candidates, plot_all
 
 import pandas as pd
 import numpy as np
@@ -20,10 +20,12 @@ APP_NAME = "Analyse PQR"
 st.markdown("<h1 style='text-align: center; color: black;'>Thèmes et Candidats mentionnés dans la Presse Quotidienne Régionale</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: black;'>Semaine du 10 au 14 Janvier</h2>", unsafe_allow_html=True)
 
-y = pd.read_csv("y.csv", index_col=0)
+presse_nationale = pd.read_csv("presse_nationale.csv", index_col="Unnamed: 0")
+y = pd.read_csv("y2.csv",index_col="Unnamed: 0").transpose()
+y["_"] = 0
+y = y.join(presse_nationale)
 x = pd.read_csv("x.csv",index_col=0)
 
-y = y.reset_index()
 
 st.write(plot(x))
 st.write(plot_candidates(y))
