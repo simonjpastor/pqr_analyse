@@ -115,7 +115,7 @@ def plot_all(data):
     plot_bgcolor='rgba(0,0,0,0)',
     title={
         'text': "Poids des Thèmes dans la Presse Quotidienne Régionale %",
-        'y':0.96,
+        'y':0.85,
         'x':0.5,
         'xanchor': 'center',
         'yanchor': 'top'},
