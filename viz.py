@@ -27,8 +27,8 @@ y = y.join(presse_nationale)
 x = pd.read_csv("x.csv",index_col=0)
 
 
-st.write(plot_all(x))
-st.write(plot_candidates(y))
+st.write(plot_all(y))
+st.write(plot_candidates(x))
 
 st.write("©Simon Pastor")
 st.write("Contact: simonjpastor@gmail.com")
