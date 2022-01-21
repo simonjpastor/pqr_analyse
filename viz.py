@@ -20,13 +20,13 @@ APP_NAME = "Analyse PQR"
 st.markdown("<h1 style='text-align: center; color: black;'>Thèmes et Candidats mentionnés dans la Presse Quotidienne Régionale</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center; color: black;'>Période du 7 au 13 Janvier</h2>", unsafe_allow_html=True)
 
-presse_nationale = pd.read_csv("presse_nationale.csv", index_col="Unnamed: 0")
-y = pd.read_csv("y2.csv",index_col="Unnamed: 0").transpose()
+presse_nationale = pd.read_csv("presse_nationale2.csv", index_col="Unnamed: 0")
+y = pd.read_csv("y3.csv",index_col="Unnamed: 0").transpose()
 y.insert(0,"",0)
 y = presse_nationale.join(y)
-x = pd.read_csv("y.csv",index_col=0)
+x = pd.read_csv("x3.csv",index_col=0)
 
-candidats_pn = pd.read_csv("candidats_presse_nationale.csv",index_col=0)
+candidats_pn = pd.read_csv("candidats_presse_nationale2.csv",index_col=0)
 
 st.write(plot_all(y), use_column_width=True)
 st.plotly_chart(plot_candidates(x), use_column_width=True)
