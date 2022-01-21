@@ -144,7 +144,7 @@ def plot_all(data):
     paper_bgcolor='rgba(0,0,0,0)',
     plot_bgcolor='rgba(0,0,0,0)',
     title={
-        'text': "Poids des Thèmes dans la Presse Quotidienne Régionale %",
+        'text': "Poids des Thèmes dans la Presse Quotidienne Régionale % (hors covid et vaccin)",
         'y':0.88,
         'x':0.5,
         'xanchor': 'center',
