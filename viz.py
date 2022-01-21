@@ -35,7 +35,7 @@ presse_nationale = pd.read_csv("presse_nationale.csv", index_col="Unnamed: 0")
 y = pd.read_csv("y2.csv",index_col="Unnamed: 0").transpose()
 y.insert(0,"",0)
 y = presse_nationale.join(y)
-x = pd.read_csv("x2.csv",index_col=0)
+x = pd.read_csv("x.csv",index_col=0)
 candidats_pn = pd.read_csv("candidats_presse_nationale.csv",index_col=0)
 st.write(plot_all(y), use_column_width=True)
 
