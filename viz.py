@@ -27,7 +27,7 @@ y.insert(0,"",0)
 y = presse_nationale.join(y)
 x = pd.read_csv("x3.csv",index_col=0)
 candidats_pn = pd.read_csv("candidats_presse_nationale2.csv",index_col=0)
-st.write(plot_all(y), use_column_width=True)
+st.write(plot_all(y))
 
 # Week Prior
 st.markdown("<h2 style='text-align: center; color: black;'>Période du 7 au 13 Janvier</h2>", unsafe_allow_html=True)
@@ -37,7 +37,7 @@ y.insert(0,"",0)
 y = presse_nationale.join(y)
 x = pd.read_csv("x.csv",index_col=0)
 candidats_pn = pd.read_csv("candidats_presse_nationale.csv",index_col=0)
-st.write(plot_all(y), use_column_width=True)
+st.write(plot_all(y))
 
 st.plotly_chart(plot_candidates(x), use_column_width=True)
 st.plotly_chart(plot_national(candidats_pn), use_column_width=True)
