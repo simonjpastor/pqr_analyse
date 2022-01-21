@@ -18,7 +18,7 @@ import streamlit as st
 
 APP_NAME = "Analyse PQR"
 st.markdown("<h1 style='text-align: center; color: black;'>Thèmes et Candidats mentionnés dans la Presse Quotidienne Régionale</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color: black;'>Période du 7 au 13 Janvier</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: black;'>Période du 14 au 20 Janvier</h2>", unsafe_allow_html=True)
 
 presse_nationale = pd.read_csv("presse_nationale2.csv", index_col="Unnamed: 0")
 y = pd.read_csv("y3.csv",index_col="Unnamed: 0").transpose()
